@@ -1,0 +1,27 @@
+HKCR
+{
+	AveStartButtonChangerInProc.CAveStart.1 = s 'CAveStartButtonChangerObject Class'
+	{
+		CLSID = s '{F791A188-699D-4FD4-955A-EB59E89B1907}'
+	}
+	AveStartButtonChangerInProc.CAveStartBu = s 'CAveStartButtonChangerObject Class'
+	{
+		CLSID = s '{F791A188-699D-4FD4-955A-EB59E89B1907}'
+		CurVer = s 'AveStartButtonChangerInProc.CAveStart.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {F791A188-699D-4FD4-955A-EB59E89B1907} = s 'CAveStartButtonChangerObject Class'
+		{
+			ProgID = s 'AveStartButtonChangerInProc.CAveStart.1'
+			VersionIndependentProgID = s 'AveStartButtonChangerInProc.CAveStartBu'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{CFA8AF78-B9E2-4C91-8DB7-2314C781E8A4}'
+		}
+	}
+}

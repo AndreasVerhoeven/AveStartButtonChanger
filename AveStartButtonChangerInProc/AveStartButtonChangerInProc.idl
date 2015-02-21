@@ -1,0 +1,36 @@
+// AveStartButtonChangerInProc.idl : IDL source for AveStartButtonChangerInProc
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (AveStartButtonChangerInProc.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(CE65D9CE-FB92-4FB8-823A-B080FAC3C999),
+	dual,
+	nonextensible,
+	helpstring("ICAveStartButtonChangerObject Interface"),
+	pointer_default(unique)
+]
+interface ICAveStartButtonChangerObject : IDispatch{
+};
+[
+	uuid(CFA8AF78-B9E2-4C91-8DB7-2314C781E8A4),
+	version(1.0),
+	helpstring("AveStartButtonChangerInProc 1.0 Type Library")
+]
+library AveStartButtonChangerInProcLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(F791A188-699D-4FD4-955A-EB59E89B1907),
+		helpstring("CAveStartButtonChangerObject Class")
+	]
+	coclass CAveStartButtonChangerObject
+	{
+		[default] interface ICAveStartButtonChangerObject;
+	};
+};

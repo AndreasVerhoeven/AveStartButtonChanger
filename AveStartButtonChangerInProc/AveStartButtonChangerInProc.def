@@ -1,0 +1,12 @@
+; AveStartButtonChangerInProc.def : Declares the module parameters.
+
+LIBRARY      "AveStartButtonChangerInProc.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE
+	
+	SetPatcherEnabledStatus
+	GetPatcherEnabledStatus
